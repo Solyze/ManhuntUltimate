@@ -1,1 +1,94 @@
+# This is the configuration for ManhuntUltimate.
+# A detailed explanation/documentation can be found below:
+# (Link)
 
+#/hunter add <player> - This is the message that will be sent if the argument is not an online player.
+hunterplayernotfound: '&cCould not find player ''&6%player%&c''!'
+#Should hunter(s) be blind when the headstart is active?
+blindhuntersonheadstart: true
+#Should a message be broadcasted when the headstart is activated?
+broadcastheadstartdeactivated: true
+#Should the hunter(s) be able to track whilst the headstart is active?
+cantrackinheadstart: false
+#Should a message be broadcasted when the ender dragon is killed/dies?
+sendenderdragonkilledbroadcast: true
+#Should the players names with color (and prefix if that is configured below) be set in the tablist and chat?
+setplayernamecolors: true
+#Should team chats be enabled? (Should team members be able to chat with each other?)
+teamchats: true
+#Should team members be able to share their location with other team members?
+cansharelocations: true
+#Message that is sent when a hunter tries to track in headstart (if cantrackinheadstart above is disabled).
+cannottrackinheadstartmessage: '&cYou may not track players whilst the headstart is
+  active!'
+#The duration of the headstart in seconds.
+headstartduration: 60
+#Prefix of the plugin, will be put in front of every message.
+prefix: '&c&lManhuntUltimate &8&l» &f'
+#If the players don't have permission 'manhuntultimate' in order to execute the command, this message will be sent.
+nopermission: '&cYou do not have the permission required to use this command!'
+#Message that is sent when a player reloads the configuration.
+reloadconfig: '&aPlugin configuration file successfully reloaded!'
+#Message that is sent when a player tries reloads the configuration, but it fails.
+reloadconfigfailed: '&cFailed to reload the plugin configuration! (Check the console
+  or logs for detailed information)'
+#If an argument is unknown or illegal for whatever reason, this message will be sent:
+unknownorillegalargument: '&cUnknown or illegal argument.'
+#Message that will be sent with the one above ^ (Encourages the player to type /manhunt help).
+typehelpmessage: '&cType &6/manhunt help &cfor a list of commands and usages.'
+#The help message that will be sent when a player types /manhunt help.
+helpmessage:
+- '&c&lHanhuntUltimate Help (Page 1 of 1):'
+- '&7- &f/manhunt help: &6Sends this message'
+- '&7- &f/manhunt reloadconfig: &6Reloads the plugin configuration'
+- '&7- &f/manhunt hunter <name>: &6Adds or removes a player from the hunter team'
+- '&7- &f/manhunt headstart: &6Gives the speedrunners a headstart, duration is configurable'
+- '&7- &f/manhunt sharelocation: &6Sends your location to your teammates'
+- '&7- &f/manhunt chat: &6Sends a message to your team members'
+#Message that will be broadcasted when a player is added to the hunter team. (Removed from the speedrunner team).
+hunteradded: '&2%player% &ais now a &chunter&a!'
+#Message that will be broadcasted when a player is removed from the hunter team. (Added to the speedrunner team).
+hunterremoved: '&2%player% &ais no longer a &chunter&a! &7(They are now a speedrunner)'
+#Message that will be sent when a speedrunner is trying to use the compass to track someone. (Only hunters can track).
+compassnothunter: '&cYou can''t track players as you are not a hunter!'
+#Message that will be sent when a hunter is tracking someone. (No message will be sent if there is no speedrunners to track. Remove the distance if you don't want it).
+tracking: '&aYour compass is now pointing towards &2%target% &a(%distance% blocks
+  away)'
+#Message that will be sent when there are no players to track. (Believe this is currently broken, will be fixed in another update).
+notargettotrack: '&cFound no players to track!'
+#Message that will be sent when a hunter tries to drop their compass/tracker.
+cantdropcompass: '&cYou can''t drop your compass, silly!'
+#Message that will be broadcasted when the headstart is activated.
+headstartactivated: '&aThe speedrunners get a %duration% second headstart, the game
+  has begun!'
+#Message that will be broadcasted when the headstart is over.
+headstartdeactivated: '&aIt has now been %duration% seconds! The hunters have been
+  released!'
+#Message that will be sent when someone tries to activate the headstart but there is no hunters to get a headstart from.
+nohuntersadded: '&cNo hunters have been added! There is no one to get a headstart
+  from!'
+#Message that will be sent to all hunters when a hunter shares their location with them.
+sharelocationmessagehunter: '&4[Hunter Chat] &c%player%&f''s location: &6[%x%, %y%,
+  %x%]'
+#Message that will be sent to all speedrunners when a speedrunner shares their location with them.
+sharelocationmessagespeedrunner: '&9[Speedrunner Chat] &b%player%&f''s location: &3[%x%,
+  %y%, %x%]'
+#Format for the hunter chat.
+hunterchatformat: '&4[Hunter Chat] &c%player%&f:&6%message%'
+#Format for the speedrunner chat.
+speedrunnerchatformat: '&9[Speedrunner Chat] &b%player%&f:&3%message%'
+#Message that will be broadcasted when the ender dragon is killed/dies.
+enderdragonkilledbroadcast:
+- '&6&m----------------------------------------'
+- '&c&lTHE ENDER DRAGON HAS BEEN KILLED!'
+- '&6&m----------------------------------------'
+#The name of the hunter in tab/chat if the feature is enabled.
+huntername: '&c[Hunter] %player%&f'
+#The name of the speedrunner in tab/chat if the feature is enabled.
+speedrunnername: '&b[Speedrunner] %player%&f'
+#Default chat format (will include the names of the teams in chat/tab if that is enabled).
+chatformat: '&f%player%&7: &f%message%'
+#Message that will be sent when a team member tries to use the team chat but it is disabled.
+teamchatdisabled: '&cTeam chats are disabled!'
+#Message that will be sent when a team member tries to share their location but it is disabled.
+sharelocationdisabled: '&cLocation sharing is disabled!'
