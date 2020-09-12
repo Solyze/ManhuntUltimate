@@ -4,4 +4,4 @@
 
 # WIKI
 ***
->
+> [Click here](https://github.com/Solyze/ManhuntUltimate/wiki/Home-(Main-Page)) to visit the Wiki which contains even more information about the plugin.
