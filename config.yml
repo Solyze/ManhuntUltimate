@@ -6,7 +6,7 @@
 hunterplayernotfound: '&cCould not find player ''&6%player%&c''!'
 #Should hunter(s) be blind when the headstart is active?
 blindhuntersonheadstart: true
-#Should a message be broadcasted when the headstart is activated?
+#Should a message be broadcasted when the headstart is deactivated?
 broadcastheadstartdeactivated: true
 #Should the hunter(s) be able to track whilst the headstart is active?
 cantrackinheadstart: false
