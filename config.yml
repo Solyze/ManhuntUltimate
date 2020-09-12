@@ -12,8 +12,6 @@ broadcastheadstartdeactivated: true
 cantrackinheadstart: false
 #Should a message be broadcasted when the ender dragon is killed/dies?
 sendenderdragonkilledbroadcast: true
-#Should the players names with color (and prefix if that is configured below) be set in the tablist and chat?
-setplayernamecolors: true
 #Should team chats be enabled? (Should team members be able to chat with each other?)
 teamchats: true
 #Should team members be able to share their location with other team members?
@@ -82,10 +80,6 @@ enderdragonkilledbroadcast:
 - '&6&m----------------------------------------'
 - '&c&lTHE ENDER DRAGON HAS BEEN KILLED!'
 - '&6&m----------------------------------------'
-#The name of the hunter in tab/chat if the feature is enabled.
-huntername: '&c[Hunter] %player%&f'
-#The name of the speedrunner in tab/chat if the feature is enabled.
-speedrunnername: '&b[Speedrunner] %player%&f'
 #Default chat format (will include the names of the teams in chat/tab if that is enabled).
 chatformat: '&f%player%&7: &f%message%'
 #Message that will be sent when a team member tries to use the team chat but it is disabled.
