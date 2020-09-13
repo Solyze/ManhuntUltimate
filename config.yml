@@ -94,3 +94,11 @@ toggleteamchatdisabled: '&7Team chat is now toggled &coff&7!'
 trackparticles: true
 #How long should the of particles towards the player being tracked's location go before it stops? (blocks)
 particlerange: 5
+#Should the command to check your team members health be enabled?
+teamhealthcommand: true
+#Team health (command) message for hunters
+teamhealthmessagehunter: '&c%player%&7''s health: &c%health% ❤'
+#Team health (command) message for speedrunners
+teamhealthmessagespeedrunner: '&b%player%&7''s health: &c%health% ❤'
+#Message that is sent when the team health command is disabled and someone tries to execute it
+teamhealthcommanddisabled: '&cTeam health command is disabled!'
