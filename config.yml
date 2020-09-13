@@ -1,6 +1,6 @@
 # This is the configuration for ManhuntUltimate.
 # A detailed explanation/documentation can be found below:
-# (Link)
+# https://github.com/Solyze/ManhuntUltimate/blob/master/config.yml
 
 #/hunter add <player> - This is the message that will be sent if the argument is not an online player.
 hunterplayernotfound: '&cCould not find player ''&6%player%&c''!'
