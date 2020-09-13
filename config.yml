@@ -36,13 +36,13 @@ unknownorillegalargument: '&cUnknown or illegal argument.'
 typehelpmessage: '&cType &6/manhunt help &cfor a list of commands and usages.'
 #The help message that will be sent when a player types /manhunt help.
 helpmessage:
-- '&c&lHanhuntUltimate Help (Page 1 of 1):'
-- '&7- &f/manhunt help: &6Sends this message'
-- '&7- &f/manhunt reloadconfig: &6Reloads the plugin configuration'
-- '&7- &f/manhunt hunter <name>: &6Adds or removes a player from the hunter team'
-- '&7- &f/manhunt headstart: &6Gives the speedrunners a headstart, duration is configurable'
-- '&7- &f/manhunt sharelocation: &6Sends your location to your teammates'
-- '&7- &f/manhunt chat: &6Sends a message to your team members'
+  - '&c&lHanhuntUltimate Help (Page 1 of 1):'
+  - '&7- &f/manhunt help: &6Sends this message'
+  - '&7- &f/manhunt reloadconfig: &6Reloads the plugin configuration'
+  - '&7- &f/manhunt hunter <name>: &6Adds or removes a player from the hunter team'
+  - '&7- &f/manhunt headstart: &6Gives the speedrunners a headstart, duration is configurable'
+  - '&7- &f/manhunt sharelocation: &6Sends your location to your teammates'
+  - '&7- &f/manhunt chat: &6Sends a message to your team members'
 #Message that will be broadcasted when a player is added to the hunter team. (Removed from the speedrunner team).
 hunteradded: '&2%player% &ais now a &chunter&a!'
 #Message that will be broadcasted when a player is removed from the hunter team. (Added to the speedrunner team).
@@ -77,12 +77,20 @@ hunterchatformat: '&4[Hunter Chat] &c%player%&f:&6%message%'
 speedrunnerchatformat: '&9[Speedrunner Chat] &b%player%&f:&3%message%'
 #Message that will be broadcasted when the ender dragon is killed/dies.
 enderdragonkilledbroadcast:
-- '&6&m----------------------------------------'
-- '&c&lTHE ENDER DRAGON HAS BEEN KILLED!'
-- '&6&m----------------------------------------'
+  - '&6&m----------------------------------------'
+  - '&c&lTHE ENDER DRAGON HAS BEEN KILLED!'
+  - '&6&m----------------------------------------'
 #Default chat format (will include the names of the teams in chat/tab if that is enabled).
 chatformat: '&f%player%&7: &f%message%'
 #Message that will be sent when a team member tries to use the team chat but it is disabled.
 teamchatdisabled: '&cTeam chats are disabled!'
 #Message that will be sent when a team member tries to share their location but it is disabled.
 sharelocationdisabled: '&cLocation sharing is disabled!'
+#Message that is sent when team chat is toggled on/enabled.
+toggleteamchatenabled: '&7Team chat is now toggled &aon&7! &7(Everything you type will be put in teamchat)'
+#Message that is sent when team chat is toggled off/disabled.
+toggleteamchatdisabled: '&7Team chat is now toggled &coff&7!'
+#Should the compass display a line of particles towards the player being tracked's location?
+trackparticles: true
+#How long should the of particles towards the player being tracked's location go before it stops? (blocks)
+particlerange: 5
